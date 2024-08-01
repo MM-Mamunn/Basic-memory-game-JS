@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+
+            height: 630px;
+            width: 630px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 2fr 1.5fr 2fr;
+            grid-template-rows: 2fr 1.5fr 2fr;
+            background-color: rgb(229, 229, 229);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .con1 {margin:5px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .con2 {margin:5px;
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+
+        .con3 {margin:5px;
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        .con4 {margin:5px;
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+
+        .container {
+
+            border: 3px solid rgb(103, 0, 0);
+            background-color: rgb(222, 47, 47);
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+            padding: 30px 30px 30px 30px;
+        }
+
+        .inside {
+            border: 2px solid rgb(57, 0, 0);
+            height: 188px;
+            width: 188px;
+            display: grid;
+            background-color: rgb(210, 210, 210);
+            grid-template-columns: 1fr 1fr;
+            /* justify-content: center; */
+            justify-items: center;
+        }
+
+        .circle {
+            margin: 18px 0 0 0;
+            background-color: rgb(222, 47, 47);
+            border: 2px solid red;
+            border-radius: 30px;
+            height: 60px;
+            border: 2px solid black;
+            width: 60px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="main">
+        <div class="outside">
+
+            <div class="boxes box1 ">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div> -->
+    <div class="main">
+        <div class="con1">
+
+            <div class="container">
+                <div class="inside">
+                    <div class="circle circle1"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="con2">
+
+            <div style="background-color: rgb(35, 70, 207);" class="container ">
+                <div class="inside">
+                    <div style="background-color: rgb(35, 70, 207);" class="circle"></div>
+                    <div style="background-color: rgb(35, 70, 207);" class="circle"></div>
+                    <div style="background-color: rgb(35, 70, 207);" class="circle"></div>
+                    <div style="background-color: rgb(35, 70, 207);" class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="con3">
+
+            <div style="background-color: rgb(255, 227, 0);" class="container ">
+                <div class="inside">
+                    <div  style="background-color: rgb(255, 227, 0);" class="circle"></div>
+                    <div style="background-color: rgb(255, 227, 0);"  class="circle"></div>
+                    <div style="background-color: rgb(255, 227, 0);"  class="circle"></div>
+                    <div style="background-color: rgb(255, 227, 0);"  class="circle"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="con4">
+
+            <div style="background-color: rgb(23, 187, 41);" class="container ">
+                <div class="inside">
+                    <div style="background-color: rgb(23, 187, 41);"   class="circle"></div>
+                    <div style="background-color: rgb(23, 187, 41);"   class="circle"></div>
+                    <div style="background-color: rgb(23, 187, 41);"   class="circle"></div>
+                    <div style="background-color: rgb(23, 187, 41);"   class="circle"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
